@@ -283,7 +283,7 @@ h1, h2, p {
 
 /* Estiliza os botões de navegação */
 .owl-carousel .owl-nav .nav-btn {
-  background-color: rgba(0, 0, 0, 0.5) !important;
+  border-radius: 50px;
   border: none !important;
   color: white !important;
   font-size: 2em !important;
@@ -294,7 +294,7 @@ h1, h2, p {
 }
 
 .owl-carousel .owl-nav .nav-btn:hover {
-  background-color: rgba(0, 0, 0, 0.7) !important;
+  background-color: rgba(0, 0, 0, 0.2) !important;
 }
 
 #menu {
