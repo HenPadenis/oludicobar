@@ -231,7 +231,7 @@ h1, h2, p{
   border-radius: 15px;
   color: white;
   background-color: rgba(132, 0, 255, 0.8);
-  margin-top: 125px;
+  margin-top: 100px;
   transition: background-color 0.5s ease, color 0.3s ease, transform 0.5s ease;
   font-weight: bold;
 }
@@ -240,19 +240,29 @@ h1, h2, p{
   transform: scale(1.03);
 }
 
+.container-sobre {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: flex-start;
+  // margin: 30px 20px;
+  margin-top: 20px;
+}
+
 
 #sobre{
   background: rgba(255, 255, 255, 0.05); /* Fundo semi-transparente */
   backdrop-filter: blur(10px); /* Aplicando o desfoque */
   -webkit-backdrop-filter: blur(10px);
   box-shadow: 0 10px 18px rgba(0, 0, 0, 0.9);
-  max-width: 42%;
+  max-width: 45%;
   padding: 20px;
   margin: 0 auto;
   display: inline-block;
   margin-left: 20px; 
   margin-top: 30px;
   border-radius: 25px;
+  flex-direction: column;
 }
 #sobre .historia-sobre p{
   margin: 10px 0;
@@ -267,31 +277,74 @@ h1, h2, p{
   text-align: justify;
 }
 
-.owl-carousel {
-  // margin-right: -150px;
-  // max-width: 50%; 
-  // margin: auto;
-  max-width: 50%; /* Ajuste a largura conforme necessário */
-  margin-left: auto; /* Empurra o carrossel para a direita */
-  margin-right: 0;
-}
-
-.owl-carousel .item {
-  /* Adicione estilos para os itens do carrossel */
-  background-color: #ddd; /* Apenas para visualização */
+#carrossel {
+  margin-top: 30px;
+  width: 45%; /* Ocupa metade do contêiner */
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 300px; /* Ajuste conforme necessário */
-  overflow: hidden;
+  justify-content: center; /* Centraliza o carrossel horizontalmente */
+  align-items: center; /* Centraliza o carrossel verticalmente */
 }
 
-.owl-carousel .item img {
-  /* Ajusta a imagem para cobrir o item */
-  width: 100%;
-  height: auto; /* Mantém a proporção da imagem */
+.foto1-verde{
+  height: 380px;
 }
 
+.owl-carousel {
+  width: 100% !important; /* Ajusta a largura para corresponder ao #sobre */
+  margin-left: 20px;
+  margin-right: 20px !important;
+}
+
+// .owl-carousel .item {
+//   border-radius: 30px;
+//   background-color: #ddd; /* Apenas para visualização */
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   height: 350px; /* Ajuste conforme necessário */
+//   overflow: hidden;
+//   margin: 15px;
+//   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.9);
+// }
+
+// .owl-carousel .item img {
+//   width: 50%;
+//   height: auto; /* Mantém a proporção da imagem */
+// }
+
+.owl-carousel .owl-item img{
+  border-radius: 25px;
+  width: 80% !important;
+  height: 380px !important;
+  margin-left: 50px !important;
+}
+
+.owl-carousel .owl-nav {
+  position: absolute !important;
+  top: 50% !important;
+  width: 100% !important;
+  display: flex !important;
+  justify-content: space-between !important; 
+  transform: translateY(-50%) !important;
+  pointer-events: none !important; /* Permite clicar através do contêiner */
+  // margin-right: -50px !important;
+}
+
+/* Estiliza os botões de navegação */
+.owl-carousel .owl-nav .nav-btn {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  border: none !important;
+  color: white !important;
+  font-size: 2em !important;
+  padding: 10px !important;
+  cursor: pointer !important;
+  pointer-events: all !important; /* Permite clicar nos botões */
+  margin-right: 100px !important;
+}
+
+.owl-carousel .owl-nav .nav-btn:hover {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+}
 
 
 
