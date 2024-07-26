@@ -23,7 +23,7 @@ body::before {
   background-size: cover;
   background-position: center calc(100% - 20vh);
   background-repeat: no-repeat;
-  filter: brightness(40%); /* Escurece a imagem de fundo */
+  filter: brightness(30%); /* Escurece a imagem de fundo */
   z-index: -1; /* Coloca a imagem atrás do conteúdo */
 }
 
@@ -44,23 +44,64 @@ body::before {
 
 
 @media (max-width: 1366px){
+  body{
+    height: 1100px !important;
+  }
   body::before{
     background-position: center calc(20% - 20vh);
-    // background-attachment: fixed;
   }
-  // #logo{
-  //   width: 100%;
-  // }
+
+  .container-sobre{
+    margin-top: 140px!important;
+  }
+
+  .titulo-descricao{
+    margin-top: 20px !important;
+  }
+
   #sobre{
-    margin-top: 300px;
+    max-width: 35%;
   }
+
+  .owl-carousel .owl-item img{
+    border-radius: 25px;
+    width: 80% !important;
+    height: 300px !important;
+    margin-left: 50px !important;
+  }
+
+  .container-sobre #carrossel .owl-carousel .owl-item img {
+    height: 370px !important;
+  }
+
+  .container-sobre #carrossel .owl-carousel .owl-nav .nav-btn {
+    border-radius: 50px;
+    // background-color: rgba(0, 0, 0, 0.1) !important;
+    border: none !important;
+    color: white !important;
+    font-size: 2em !important;
+    padding: 10px !important;
+    cursor: pointer !important;
+    pointer-events: all !important; /* Permite clicar nos botões */
+    margin-right: 55px !important;
+  }
+
+  h2{
+    font-size: 16px;
+  }
+
+  p{
+    font-size: 14px;
+  }
+
 }
+
 @media (max-width: 768px) {
   body::before {
     background-position: left;
   }
   #logo{
-    width: 25%;
+    width: 8%;
   }
   .titulo{
     margin-top: -100px;
@@ -104,6 +145,7 @@ body::before {
 
 
 .titulo-descricao{
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center; /* Centraliza horizontalmente */
@@ -245,8 +287,7 @@ h1, h2, p{
   justify-content: space-between;
   width: 100%;
   align-items: flex-start;
-  // margin: 30px 20px;
-  margin-top: 20px;
+  margin-top: 200px;
 }
 
 
@@ -346,6 +387,20 @@ h1, h2, p{
 .owl-carousel .owl-nav .nav-btn:hover {
   background-color: rgba(0, 0, 0, 0.2) !important;
 }
+
+
+.video{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+#video-ytb{
+  border: 10px solid;
+  border-color: rgb(201, 133, 133);
+  border-radius: 15px;
+}
+
 
 
 
