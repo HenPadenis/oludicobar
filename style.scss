@@ -8,8 +8,7 @@ body {
   padding: 0;
   min-height: 100vh;
   height: 100%;
-  // overflow: hidden; /* Garante que o pseudo-elemento não ultrapasse a tela */
-  position: relative; /* Necessário para o posicionamento absoluto do pseudo-elemento */
+  position: relative; 
 }
 
 body::before {
@@ -23,22 +22,22 @@ body::before {
   background-size: cover;
   background-position: center calc(100% - 20vh);
   background-repeat: no-repeat;
-  filter: brightness(30%); /* Escurece a imagem de fundo */
-  z-index: -1; /* Coloca a imagem atrás do conteúdo */
+  filter: brightness(30%);
+  z-index: -1; 
 }
 
 @media (min-width: 1367px) {
+
+  body{
+    height: 1300px !important;
+  }
+
   body::before{
     background-position: center calc(20% - 20vh);
-    // background-attachment: fixed;
   }
   #logo{
     width: 8%;
   }
-
-  // #sobre{
-  //   margin-top: 300px;
-  // }
 
 }
 
@@ -76,13 +75,12 @@ body::before {
 
   .container-sobre #carrossel .owl-carousel .owl-nav .nav-btn {
     border-radius: 50px;
-    // background-color: rgba(0, 0, 0, 0.1) !important;
     border: none !important;
     color: white !important;
     font-size: 2em !important;
     padding: 10px !important;
     cursor: pointer !important;
-    pointer-events: all !important; /* Permite clicar nos botões */
+    pointer-events: all !important; 
     margin-right: 55px !important;
   }
 
@@ -121,25 +119,25 @@ body::before {
 }
 
 ::-webkit-scrollbar {
-  width: 10px; /* Largura da barra de rolagem vertical */
-  height: 12px; /* Altura da barra de rolagem horizontal */
+  width: 10px; 
+  height: 12px; 
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(132, 0, 255, 0.8); /* Cor do polegar */
-  border-radius: 6px; /* Arredonda os cantos do polegar */
-  // border: 3px solid rgba(255, 255, 255, 0.5); /* Adiciona uma borda ao polegar */
+  background: rgba(132, 0, 255, 0.8); 
+  border-radius: 6px; 
+
 }
 
-/* Estiliza o fundo da barra de rolagem */
+
 ::-webkit-scrollbar-track {
-  background: rgb(0, 0, 0); /* Cor do fundo */
-  border-radius: 6px; /* Arredonda os cantos do fundo */
+  background: rgb(0, 0, 0); 
+  border-radius: 6px; 
 }
 
-/* Estiliza o canto da barra de rolagem (onde as barras horizontal e vertical se encontram) */
+
 ::-webkit-scrollbar-corner {
-  background: rgba(0, 0, 0, 0.1); /* Cor do canto */
+  background: rgba(0, 0, 0, 0.1);
 }
 
 
@@ -148,7 +146,7 @@ body::before {
   margin-top: 100px;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centraliza horizontalmente */
+  align-items: center; 
   text-align: center;
 }
 
@@ -157,7 +155,7 @@ body::before {
 }
 
 
-h1, h2, p{
+h1, h2, h3, p{
   color: white;
 }
 
@@ -292,8 +290,8 @@ h1, h2, p{
 
 
 #sobre{
-  background: rgba(255, 255, 255, 0.05); /* Fundo semi-transparente */
-  backdrop-filter: blur(10px); /* Aplicando o desfoque */
+  background: rgba(255, 255, 255, 0.05); 
+  backdrop-filter: blur(10px); 
   -webkit-backdrop-filter: blur(10px);
   box-shadow: 0 10px 18px rgba(0, 0, 0, 0.9);
   max-width: 45%;
@@ -310,20 +308,16 @@ h1, h2, p{
 }
 
 
-// .historia-sobre{
-//   margin-left: 100px; 
-// }
-
 .historia-sobre p{
   text-align: justify;
 }
 
 #carrossel {
   margin-top: 30px;
-  width: 45%; /* Ocupa metade do contêiner */
+  width: 45%;
   display: flex;
-  justify-content: center; /* Centraliza o carrossel horizontalmente */
-  align-items: center; /* Centraliza o carrossel verticalmente */
+  justify-content: center; 
+  align-items: center; 
 }
 
 .foto1-verde{
@@ -331,7 +325,7 @@ h1, h2, p{
 }
 
 .owl-carousel {
-  width: 100% !important; /* Ajusta a largura para corresponder ao #sobre */
+  width: 100% !important; 
   margin-left: 20px;
   margin-right: 20px !important;
 }
@@ -389,16 +383,34 @@ h1, h2, p{
 }
 
 
-.video{
+.video-clientes{
   display: flex;
-  justify-content: center;
-  margin-top: 50px;
+  justify-content: left;
+  margin-top: 100px;
+  margin-left: 50px;
+}
+
+.container-video{
+  width: 45%;
 }
 
 #video-ytb{
   border: 10px solid;
   border-color: rgb(201, 133, 133);
   border-radius: 15px;
+}
+
+.video-clientes .clientes{
+  margin-left: 250px !important;
+  width: 30% !important;
+}
+
+.video-clientes .clientes .item{
+
+}
+
+.video-clientes .clientes .item p{
+  text-align: justify;
 }
 
 
